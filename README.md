@@ -25,4 +25,4 @@ This is a basic static quiz application created in Flutter. It is based on the c
 
 ## Acknowledgments
 
-I would like to express my gratitude to [Udemy Instructor Name](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/#instructor-2) for their exceptional Flutter and Dart course. This project wouldn't have been possible without their valuable teachings and guidance.
+I would like to express my gratitude to  `Maximilian Schwarzmüller` (https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/#instructor-2) for their exceptional Flutter and Dart course. This project wouldn't have been possible without their valuable teachings and guidance.
