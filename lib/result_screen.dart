@@ -37,53 +37,55 @@ class ResultScreen extends StatelessWidget {
     }).length;
 
     return SizedBox(
-      width: double.infinity,
+      width: double.maxFinite,
       child: Container(
         margin: const EdgeInsets.all(40),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Image.asset(
-              'assets/images/result.png',
-              width: 200,
-              height: 200,
-            ),
-            Text(
-              '$numCrtQuestions out of $numTotQuestions',
-              style: GoogleFonts.racingSansOne(fontSize: 30),
-            ),
-            const SizedBox(height: 10),
-            QuestionSummary(summaryData),
-            const SizedBox(
-              height: 30,
-            ),
-            //const Text('Chosen and Correct Answer'),
-            //const SizedBox(height: 10),
-            OutlinedButton.icon(
-              onPressed: startQuiz, //add start quix here
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: const Color.fromARGB(255, 170, 64, 180),
-                surfaceTintColor: Colors.black,
-                shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                shadowColor: Colors.redAccent,
-                //disabledBackgroundColor: Colors.black
-                //backgroundColor: Colors.white,
+        child: Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Image.asset(
+                'assets/images/result.png',
+                width: 200,
+                height: 200,
               ),
-              icon: const Icon(
-                Icons.restart_alt_rounded,
-                size: 60,
+              Text(
+                '$numCrtQuestions out of $numTotQuestions',
+                style: GoogleFonts.racingSansOne(fontSize: 30),
               ),
-              label: Text(
-                ' Restart Quiz !',
-                style: GoogleFonts.vampiroOne(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
+              const SizedBox(height: 10),
+              QuestionSummary(summaryData),
+              const SizedBox(
+                height: 30,
+              ),
+              //const Text('Chosen and Correct Answer'),
+              //const SizedBox(height: 10),
+              OutlinedButton.icon(
+                onPressed: startQuiz, //add start quix here
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: const Color.fromARGB(255, 170, 64, 180),
+                  surfaceTintColor: Colors.black,
+                  shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  shadowColor: Colors.redAccent,
+                  //disabledBackgroundColor: Colors.black
+                  //backgroundColor: Colors.white,
+                ),
+                icon: const Icon(
+                  Icons.restart_alt_rounded,
+                  size: 40,
+                ),
+                label: Text(
+                  ' Restart Quiz !',
+                  style: GoogleFonts.vampiroOne(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
