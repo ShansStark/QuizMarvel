@@ -4,4 +4,4 @@ import 'package:second_application/quiz.dart';
 void main() {
   runApp(const Quiz());
 }
-//Main function
+//Main function : Start fof the flutter program
